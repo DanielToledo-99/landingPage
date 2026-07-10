@@ -3,8 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { useLang } from '../context/LanguageContext'
 import { supabase } from '../lib/supabase'
 
-const RECAPTCHA_SITE_KEY =
-  import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+const RECAPTCHA_SITE_KEY = '6LdR3kwtAAAAABwOX72-HbUeYZxXSFvGbaOArOPK'
 
 export default function LeadForm({ darkMode = true }) {
   const { lang, t } = useLang()
