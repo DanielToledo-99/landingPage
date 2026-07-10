@@ -37,7 +37,7 @@ export default function Situations() {
       <div className="max-w-content mx-auto" ref={ref}>
         <div className="reveal mb-14">
           <span className="inline-block font-heading font-semibold text-xs uppercase tracking-[0.2em] text-primary mb-3">
-            We Buy
+            {ts.badge}
           </span>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-text-main">
             {ts.title}{' '}

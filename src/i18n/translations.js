@@ -72,6 +72,7 @@ export const translations = {
       ],
     },
     situations: {
+      badge: 'We Buy',
       title: 'Any Situation,',
       titleAccent: "We're Your Solution",
       subtitle:
@@ -262,6 +263,7 @@ export const translations = {
       ],
     },
     situations: {
+      badge: 'Compramos',
       title: 'Cualquier Situación,',
       titleAccent: 'Somos Tu Solución',
       subtitle:
