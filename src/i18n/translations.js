@@ -117,7 +117,7 @@ export const translations = {
       ],
     },
     trust: {
-      badge: 'Why Thousands Trust Us',
+      badge: 'Trusted by Thousands',
       title: 'Real People, Real Results',
       points: [
         {
@@ -308,7 +308,7 @@ export const translations = {
       ],
     },
     trust: {
-      badge: 'Por Qué Miles Confían en Nosotros',
+      badge: 'Miles Confían en Nosotros',
       title: 'Personas Reales, Resultados Reales',
       points: [
         {
