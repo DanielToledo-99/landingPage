@@ -21,10 +21,16 @@ export default function LeadForm({ darkMode = true }) {
     if (errors[key]) setErrors((e) => ({ ...e, [key]: null }))
   }
 
+  const setPhone = (e) => {
+    const val = e.target.value.replace(/[^\d+\-\s().]/g, '')
+    setFields((f) => ({ ...f, phone: val }))
+    if (errors.phone) setErrors((e) => ({ ...e, phone: null }))
+  }
+
   const validate = () => {
     const errs = {}
     // name: optional — no validation
-    if (fields.email.trim() && !/\S+@\S+\.\S+/.test(fields.email)) errs.email = tf.emailInvalid
+    if (fields.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) errs.email = tf.emailInvalid
     if (!fields.phone.trim()) errs.phone = tf.phoneRequired
     if (!fields.address.trim()) errs.address = tf.addressRequired
     if (!captchaToken) errs.captcha = tf.captchaRequired
@@ -133,8 +139,9 @@ export default function LeadForm({ darkMode = true }) {
           </label>
           <input
             type="tel"
+            inputMode="numeric"
             value={fields.phone}
-            onChange={set('phone')}
+            onChange={setPhone}
             placeholder={tf.phonePlaceholder}
             className={`${baseInput} ${errors.phone ? 'border-red-400' : ''}`}
           />
@@ -149,6 +156,7 @@ export default function LeadForm({ darkMode = true }) {
         </label>
         <input
           type="email"
+          inputMode="email"
           value={fields.email}
           onChange={set('email')}
           placeholder={tf.emailPlaceholder}
