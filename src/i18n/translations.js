@@ -98,7 +98,7 @@ export const translations = {
     },
     process: {
       badge: 'How It Works',
-      title: 'How It Works',
+      title: '3 Simple Steps to Your Cash Offer',
       subtitle:
         'Three simple steps to get cash for your house — no hassle, no surprises.',
       steps: [
@@ -289,7 +289,7 @@ export const translations = {
     },
     process: {
       badge: 'Cómo Funciona',
-      title: 'Cómo Funciona',
+      title: '3 Pasos Simples para Tu Oferta en Efectivo',
       subtitle:
         'Tres pasos sencillos para recibir efectivo por tu casa — sin complicaciones ni sorpresas.',
       steps: [
