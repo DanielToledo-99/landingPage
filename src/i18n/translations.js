@@ -119,6 +119,7 @@ export const translations = {
     trust: {
       badge: 'Trusted by Thousands',
       title: 'Real People, Real Results',
+      talkToUs: 'Talk to a real person',
       points: [
         {
           title: 'A+ BBB Accredited',
@@ -310,6 +311,7 @@ export const translations = {
     trust: {
       badge: 'Miles Confían en Nosotros',
       title: 'Personas Reales, Resultados Reales',
+      talkToUs: 'Habla con una persona real',
       points: [
         {
           title: 'Acreditados A+ BBB',

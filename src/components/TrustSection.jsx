@@ -42,7 +42,7 @@ export default function TrustSection() {
             <div className="mt-10 p-5 bg-white rounded-2xl border border-outline-light/50 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="flex-1">
                 <p className="font-heading font-semibold text-text-main text-sm mb-0.5">
-                  Talk to a real person
+                  {tt.talkToUs}
                 </p>
                 <a
                   href="mailto:info@restorahomebuyers.com"
